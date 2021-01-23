@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Army 4 - Dead War</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2c69d5657b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/images/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+<div id="preloader">
+  <img id="status" src="assets/images/favicon.png">&nbsp;</img>
+  <h1>Loading...</h1>
+</div>
+
+
+  <video playsinline autoplay loop >
+    <source src="bg.mp4" type="video/mp4">
+  </video> 
+
+<section class="menu-container tabcontent" id="home">
+  <div class="header">
+    <div class="left">
+      <img src="assets/images/logo.png" alt="">
+    </div>
+    <div class="right">
+      <div class="two-row">
+        <p>PLAYER</p>
+        <span>– 62</span>
+      </div>
+      <div class="one-row">
+        <img src="assets/images/avatar.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-gui">
+     <a href="#" onclick="openTab(event, 'campain')"> 
+       <h1 class="menu-button" >CAMPAIGN</h1>
+     </a>
+     
+     <a href="#" onclick="openTab(event, 'horde')"> 
+      <h1 class="menu-button">HORDE</h1>
+    </a>
+    <a href="#" onclick="openTab(event, 'weekly')"> 
+      <h1 class="menu-button">WEEKLY EVENT</h1>
+    </a>
+    <div class="zombie-bite">
+      <img src="assets/images/favicon.png" class="star" alt="">
+      <img src="assets/images/skull.png" alt="">
+      <div class="right-text">
+        <p>ZOMBIE BITE</p>
+        <p class="black-bg"><span> REFRESHES:</span> EVERY WEDNESDAY</p>
+        <p class="black-bg"> <span>REWARD:</span> BITE SURVIVOR CHARM <span>+</span> 2000 XP BONUS</p>
+      </div>
+    </div>
+    <div class="last-two-h1">
+      <h1 class="menu-button">RECORDS</h1>
+      <span>!</span>
+      <h2 class="menu-button-yellow">SHOP <img src="assets/images/download.png" alt="">
+      </h2>
+    </div>
+    
+  </div>
+  <div class="footer">
+    <h1 class="footer-btn"><i class="fa fa-times"></i> EXIT GAME</h1>
+    <h1 class="footer-btn"><i class="fa fa-cogs"></i>OPTIONS</h1>
+    <h1 class="footer-btn"><i class="fa fa-universal-access"></i>ACCESSIBILTY</h1>
+    <h1 class="footer-btn big-btn">BENCHMARK</h1>
+  </div>
+</section>
+
+<!-- campain section -->
+<section class="menu-container campain-page tabcontent"  style="display: none;" id="campain">
+  <div class="campain-bg">
+  </div>
+
+  <div class="header campain">
+    <div class="left">
+     <h1>CAMPAIGN</h1>
+    </div>
+    <div class="right">
+      <div class="two-row">
+        <p>PLAYER</p>
+        <span>– 62</span>
+      </div>
+      <div class="one-row">
+        <img src="assets/images/avatar.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="line-text">
+    <p>SELECT HOW YOU WISH TO PLAY THIS MODE</p>
+  </div>
+
+  <div class="menu-gui campain-menu">
+   <div class="left-campain-menu">
+    <p>SOLO PLAY</p>
+    <div class="two-h1">
+      <h1 class="menu-button">NEW CAMPAIGN</h1>
+      <h1 class="menu-button">SELECT MISSION</h1>
+    </div>
+
+    <div class="last-two-h1">
+      <p>COOPERATIVE</p>
+      <h1 class="menu-button">QUICK MATCH</h1>
+      <h1 class="menu-button">BROWSE</h1>
+      <h1 class="menu-button">HOST</h1>
+    </div>
+   </div> 
+   <div class="divider"></div>
+    <div class="map-detail">
+      <div class="map-detail-text">
+        <h2>NEW SOLO CAMPAIGN</h2>
+        <span>ENEMY SETUP</span>
+        <p>DEFAULT</p>
+        <h6 class="campain-map-text">Use SELECT MISSION option to customise Enemy Setup setting.</h6>
+      </div>
+      <div class="map-detail-img">
+        <img class="map-border" src="assets/images/border-news.png" alt="">
+        <img src="assets/images/map.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <a href="#" class="footer-btn small" onclick="openTab(event, 'home')">
+      <i class="fa fa-angle-left"></i>BACK
+    </a>
+    
+    <h1 class="footer-btn big-btn">NEW SOLO CAMPAIN</h1>
+  </div>
+</section>
+
+<!-- horde section -->
+<section class="menu-container campain-page tabcontent" style="display: none;" id="horde">
+
+  <div class="header campain">
+    <div class="left">
+     <h1>HORDE</h1>
+    </div>
+    <div class="right">
+      <div class="two-row">
+        <p>PLAYER</p>
+        <span>– 62</span>
+      </div>
+      <div class="one-row">
+        <img src="assets/images/avatar.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="line-text">
+    <p>SELECT HOW YOU WISH TO PLAY THIS MODE</p>
+  </div>
+
+  <div class="menu-gui campain-menu">
+   <div class="left-campain-menu">
+    <p>SOLO PLAY</p>
+    <div class="two-h1">
+      <h1 class="menu-button">PLAY</h1>
+      <h1 class="menu-button">SELECT MISSION</h1>
+    </div>
+
+    <div class="last-two-h1">
+      <p>COOPERATIVE</p>
+      <h1 class="menu-button">QUICK MATCH</h1>
+      <h1 class="menu-button">BROWSE</h1>
+      <h1 class="menu-button">HOST</h1>
+    </div>
+   </div> 
+   <div class="divider"></div>
+    <div class="map-detail">
+      <div class="map-detail-text">
+        <h2>HORDE MODE SOLO</h2>
+        <span>ENEMY SETUP</span>
+        <p>DEFAULT</p>
+        <h6 class="campain-map-text">Use SELECT MISSION option to customise Enemy Setup setting.</h6>
+      </div>
+      <div class="map-detail-img">
+        <img class="map-border" src="assets/images/border-news.png" alt="">
+        <img src="assets/images/horde.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <a href="#" class="footer-btn small" onclick="openTab(event, 'home')">
+      <i class="fa fa-angle-left"></i>BACK
+    </a>
+  </div>
+</section>
+
+<!-- weekly section -->
+
+<section class="menu-container campain-page tabcontent" style="display: none;" id="weekly">
+
+
+  <div class="header campain">
+    <div class="left">
+     <h1>WEEKLY EVENT</h1>
+    </div>
+    <div class="right">
+      <div class="two-row">
+        <p>PLAYER</p>
+        <span>– 62</span>
+      </div>
+      <div class="one-row">
+        <img src="assets/images/avatar.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="line-text">
+    <p>SELECT HOW YOU WISH TO PLAY THIS MODE</p>
+  </div>
+
+  <div class="menu-gui campain-menu">
+   <div class="left-campain-menu">
+    <p>SOLO PLAY</p>
+    <div class="two-h1">
+      <h1 class="menu-button">PLAY</h1>
+      <h1 class="menu-button">GAME SETUP</h1>
+    </div>
+
+    <div class="last-two-h1">
+      <p>COOPERATIVE</p>
+      <h1 class="menu-button">QUICK MATCH</h1>
+      <h1 class="menu-button">BROWSE</h1>
+      <h1 class="menu-button">HOST</h1>
+    </div>
+   </div> 
+   <div class="divider"></div>
+    <div class="map-detail">
+      <div class="map-detail-text">
+        <h2>ZOMBIE BITE</h2>
+        <span>MODE</span>
+        <p>CAMPAIGN</p>
+        <span>DIFFICULTY</span>
+        <p>MEDIUM</p>
+        <span>ENEMY SETUP</span>
+        <p>DEFAULT</p>
+        <span>RULES</span>
+        <h6 class="zombie-bite-text"><i class="fa fa-check" aria-hidden="true"></i>
+          ZOMBIE BITE <br>
+          <span>Zombie melee attacks inflict Bitten status on the player</span>
+        </h6>
+
+      </div>
+      <div class="map-detail-img">
+        <img class="map-border" src="assets/images/border-news.png" alt="">
+        <img src="assets/images/weekly.png" alt="">
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <a href="#" class="footer-btn small" onclick="openTab(event, 'home')">
+      <i class="fa fa-angle-left"></i>BACK
+    </a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

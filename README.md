@@ -8,10 +8,13 @@ Cloned GUI of Zombie Army 4 game.
 ## Demo
 [Demo](https://kasim393.github.io/zombie-army-4-GUI/)
 
+## Video
+[Youtube](https://youtu.be/a0VVLepdEc0)
+
+## Screenshot
 ![Sreenshot](https://raw.githubusercontent.com/kasim393/zombie-army-4-GUI/main/ss/ss.png)
 
 ## Built With
-
 * [HTML]
 * [CSS]
 * [JS]
